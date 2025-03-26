@@ -7,12 +7,12 @@
 노래를 들을 수 있는 뮤직 플레이어 웹 앱입니다. 🎶
 
 🛠️ 작업 툴  
-- HTML  
-- CSS  
-- JavaScript  
-- Node.js  
-- Express  
-- MySQL  
+- 🏗️HTML  
+- 🎨CSS  
+- 💻JavaScript  
+- ⚡Node.js  
+- 🚀Express  
+- 🗄️MySQL  
 
 🛠️ 사용 방법  
 1️⃣ 재생 버튼 ▶️을 누르면 노래가 재생됩니다. 🎶  
