@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Sans+KR&display=swap"
+        rel="stylesheet">
+    <link href="../page/musicPlayer.css" rel="stylesheet">
+    <link rel="icon" href="../page/icon.ico" />
+    <script src="../page/musicPlayer.js"></script>
+    <title>Music-Player</title>
+</head>
+<body>
+    <div id="Box1" class="mainBox Box1">
+        <header id="menuBtn" class="menu"> <i id="munuicon" class="xi-angle-down"></i></header>
+        <div class="likeAreaBtn"><i id="likeBtnArea" class="xi-emoticon-smiley-o likeBtnArea"></i></div>
+        <main>
+            <content id="title" class="title"></content>
+            <aside id="singer" class="singer"></aside>
+            <canvas id="visualizerCanvas" class="visualizerCanvas"></canvas>
+            <div class="Shadow">
+                <aside id="musicCover" class="musicCover">
+                </aside>
+            </div>
+            <div id="lyricsBox" class="lyricsBox">
+                <p id="lyrics" class="lyrics">
+                </p>
+            </div>
+            <div id="lyricsBtn" class="lyricsBtn">가사</div>
+            <div class="likeBtn"><i id="dontlike" class="xi-heart-o dontlike"></i><i id="like"
+                    class="xi-heart like"></i></div>
+        </main>
+        <footer>
+            <aside id="musicBar" class="musicBar">
+                <input type="range" id="song_range" min="0" max="100" value="0" class="song_range">
+                <div id="startTime" class="startTime">00:00</div>
+                <div id="endTime" class="endTime">끝</div>
+            </aside>
+            <nav>
+                <div class="Btn">
+                    <div id="randomBtn" class="randomBtn Nav"><i class="xi-shuffle"></i></div>
+                    <div id="previousSong" class="previousSong Nav">
+                        <i class="xi-step-backward"></i>
+                    </div>
+                    <div id="palyAndStopBtn" class="palyAndStopBtn Nav">
+                        <div id="musicBox" class="musicBox">
+                        </div>
+                        <i id="playBtn" class="xi-play"></i><i id="stopBtn" class="xi-pause"></i>
+                    </div>
+                    <div id="nextSong" class="nextSong Nav">
+                        <i class="xi-step-forward"></i>
+                    </div>
+                    <div id="oneSong" class="Nav"><i id="oneSong" class="xi-repeat"></i></div>
+                    <div id="againSong" class="Nav againSong"><i id="againSong" class="xi-repeat-one"></i></div>
+                </div>
+            </nav>
+        </footer>
+    </div>
+    <div id="Box2" class="mainBox Box2">
+        <header id="Box2_header" class="Box2_header">재생목록<header>
+                <main>
+                    <article id="Box2_songs" class="Box2_songs">
+                    </article>
+                </main>
+                <footer class="Box2_playing" id="Box2_playing">
+                    <i class="xi-angle-up" id="menuUp"></i>
+                    <div class="playingNow" id="playingNow">
+                        <div class="playingNow_cover" id="playingNow_cover"></div>
+                        <div class="playingNow_song" id="playingNow_song"></div>
+                        <div class="playingNow_singer" id="playingNow_singer"></div>
+                    </div>
+                </footer>
+    </div>
+    <div id="Box3" class="mainBox Box3">
+        <header id="Box3_header" class="Box2_header">하트목록<header>
+                <main>
+                    <article id="Box3_songs" class="Box2_songs">
+                    </article>
+                </main>
+                <footer class="Box2_playing" id="Box3_playing">
+                    <i class="xi-angle-up" id="menuUp2"></i>
+                    <div class="playingNow" id="playingNow">
+                        <div class="playingNow_cover" id="playingNow_cover2"></div>
+                        <div class="playingNow_song" id="playingNow_song2"></div>
+                        <div class="playingNow_singer" id="playingNow_singer2"></div>
+                    </div>
+                </footer>
+    </div>
+</body>
+
+</html>

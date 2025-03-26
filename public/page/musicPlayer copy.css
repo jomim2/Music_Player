@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    background: linear-gradient(to top, #7AA1D2, #DBD4B4, #CC95C0);
+    width: 100vw;
+    height: 100vh;
+}
+
+/*----------- 음악 플레이어 메인화면 스타일 부분----------- */
+.mainBox {
+    position: relative;
+    top:1.5rem;
+    /* margin-top: 1rem; */
+    margin: auto;
+    border-radius: 1%;
+    width: 400px;
+    height: 855px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    background: #CC95C0;
+    background: linear-gradient(to top, #7AA1D2, #DBD4B4, #CC95C0);
+}
+
+.menu {
+    position: relative;
+    top: 1.5%;
+    left: 1.5%;
+    font-size: 2rem;
+    margin: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+main {
+    width: 100%;
+    height: 534.72px;
+    text-align: center;
+}
+
+/* ------------------노래제목 출력부분 ------------------*/
+.title {
+    position: relative;
+    top:-4%;
+    line-height: 100.8px;
+    height: 80.8px;
+    width: 100%;
+    font-size: 1.3rem;
+    /* border: 1px solid red; */
+
+}
+
+/*------------------ 가수이름 출력부분 ------------------*/
+.singer {
+    line-height: 20.4px;
+    height: 50.4px;
+    width: 100%;
+    /* border: 1px solid red; */
+    font-size: 1rem;
+    position: relative;
+    top:-6%;
+}
+
+/* ------------------음악 커버 표시부분 ------------------*/
+img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.Shadow {
+    position: relative;
+    top: -25px;
+    line-height: 310px;
+    margin: auto;
+    height: 310px;
+    width: 310px;
+    border: 1px solid #E1F7F5;
+    border-radius: 50%;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+.musicCover {
+    margin: auto;
+    margin-top: 13.64px;
+    line-height: 282.72px;
+    height: 282.72px;
+    width: 282.72px;
+    border: 1px solid #E1F7F5;
+    border-radius: 50%;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+/* ------------------현재 재생 목록 화면에 출력하기------------------ */
+
+.musicBar {
+    height: 80.33px;
+    width: 100%;
+
+}
+/* ------------------가사 부분 ------------------*/
+.lyricsBtn{
+    position: relative;
+    top:-17rem;
+    /*border: 1px solid red;
+    */width: 15%;
+    margin: auto;
+    cursor: pointer;
+    border-radius:15%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    -webkit-border-radius:15%;
+    -moz-border-radius:15%;
+    -ms-border-radius:15%;
+    -o-border-radius:15%;
+}
+.lyricsBox{
+    margin: auto;
+    padding: 13% 5% 13% 5%;
+    position: relative; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    top:-20rem;
+    height: 282.72px;
+    width: 282.72px;
+    /* left: 40rem; */
+    /* font-weight: bold; */
+    overflow: scroll;
+    background-color: #F2F1EB;
+    opacity: 0;
+    border-radius:50%;
+    font-size: 70%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.displayBox{
+    opacity: 0.82;
+}
+/* ------------------음악 넣는 박스 부분 ------------------*/
+.musicBox {
+    display: none;
+}
+
+/* ------------------버튼 부분 사이즈 ------------------*/
+.Btn {
+    width: 90%;
+    height: 185.85px;
+    margin: auto;
+}
+.againSong{
+    display: none;
+
+}
+.Nav {
+    cursor: pointer;
+    float: left;
+    margin-top: 15%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 6%;
+    height: 45px;
+    width: 45px;
+    line-height: 50px;
+    font-size: 2rem;
+}
+
+
+.palyAndStopBtn {
+    margin-top: 13%;
+    height: 55px;
+    width: 55px;
+    line-height: 65px;
+    font-size: 3rem;
+}
+
+.xi-play,
+.xi-pause {
+    margin-left: 10%;
+}
+
+.xi-play {
+    margin-top: 5%;
+}
+
+.xi-pause {
+    display: none;
+    margin-top: 5%;
+}
+
+i {
+    cursor: pointer;
+}
+
+/* ------------------음악 레인지 설정 부분------------------ */
+.song_range {
+    accent-color: #CDE8E5;
+    position: relative;
+    top:10%;
+    margin-left: 40px;
+    width: 80%;
+    height: 20px;
+}
+
+.startTime,
+.endTime {
+    float: left;
+    width: 10%;
+}
+
+.startTime {
+    margin-left: 10%;
+    text-align: center;
+}
+
+.endTime {
+    margin-left: 59%;
+    text-align: right;
+}
+/* -------------------재생목록의 스타일 부분--------------- */
+.Box2_header {
+    font-size: 1.5rem;
+    line-height: 94px;
+    text-align: center;
+    margin-top: 1.25rem;
+    width: 100%;
+    height: 94px;
+}
+
+/* 재생목록의 스크롤 숨기기 */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.Box2_songs {
+    overflow: scroll;
+    width: 100%;
+    height: 600px;
+}
+
+.Box2 {
+    display: none;
+}
+
+.Box2_song {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 104px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    cursor: pointer;
+}
+
+.Shadow_2 {
+    float: left;
+    margin-left: 20px;
+    line-height: 90px;
+    margin-top: 6px;
+    height: 90px;
+    width: 90px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+}
+
+.Box2_cover {
+    /*margin: auto;
+    */margin-top: 2px;
+    height: 88px;
+    width: 88px;
+    border: 1px solid #E1F7F5;
+    border-radius: 50%;
+    margin-left: 0rem;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.box2Img{
+    margin-top: 0.2rem;
+    /* margin-left: 2rem; */
+    height: 80px;
+    width: 80px;
+}
+.nameAndSinger {
+    margin-top:1rem;
+    display: flex;
+    
+}
+
+/* .Box2_time {
+    height: 20px;
+    margin-left: 2%;
+    float: left;
+    width: 10%;
+    font-size: 0.6rem;
+} */
+
+.songname {
+    flex: 3;
+    font-size: 0.8rem;
+}
+
+.singername {
+    font-size: 0.6rem;
+    flex: 1;
+    margin-right: 1rem;
+}
+
+/* 재생목록의 현재 재생중인 음악 표시 */
+.Box2_playing {
+    line-height: 74.34px;
+    width: 100%;
+    height: 140px;
+    /* border: 1px solid red; */
+    position: relative;
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+    top:2rem;
+}
+
+.xi-angle-up {
+    font-size: 1.5rem;
+}
+
+.playingNow {
+    height: 100px;
+    width: 100%;
+}
+
+.playingNow_cover {
+    float: left;
+    margin-left: 5%;
+    margin-top: -5%;
+    width: 100px;
+    height: 100px;
+}
+
+.playingNow_song,
+.playingNow_singer {
+    height: 45px;
+    float: left;
+    width: 250px;
+    margin-top: -2%;
+    line-height: 45px;
+    text-align: left;
+
+}
+
+.playingNow_song {
+    font-size: 1rem;
+    margin-left: 25px;
+}
+
+.playingNow_singer {
+    font-size: 0.8rem;
+    margin-left: 28px;
+}
+
+
